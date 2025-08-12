@@ -1,0 +1,9 @@
+.env
+node_modules
+
+
+# .gitignore
+pages/api/contact.ts
+
+# .gitignores
+node_modules/
