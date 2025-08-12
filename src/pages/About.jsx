@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LeadCaptureForm from "../components/LeadCaptureform";
+import WorkReviews from "../components/WorkReviews";
 
 export default function About() {
   return (
@@ -219,6 +220,8 @@ export default function About() {
           </div>
         </div>
       </div>
+      {/* WorkReviews */}
+      <WorkReviews />
     </div>
   );
 }

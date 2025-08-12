@@ -14,3 +14,7 @@
     @apply bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent;
   }
 }
+
+#rwl-neighborhood div:nth-child(3) {
+  top: 80px;
+}

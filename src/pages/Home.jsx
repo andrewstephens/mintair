@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Socials from "../components/Socials";
 import ReviewCarousel from "../components/ReviewCarousel";
 import MeetTheTeam from "../components/Members";
+import WorkReviews from "../components/WorkReviews";
 
 export default function Home() {
   const services = [
@@ -370,9 +371,11 @@ export default function Home() {
               </div>
             </div>
             {/* FUN ANIMATON HERE */}
-
             <ReviewCarousel />
             {/* Final Call to action to forward to the contact page. Make this absolutely amazing.  */}
+
+            {/* WorkReviews */}
+            <WorkReviews />
 
             <MeetTheTeam />
             {/* Socials */}

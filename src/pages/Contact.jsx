@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
+import WorkReviews from "../components/WorkReviews";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -207,6 +208,8 @@ export default function Contact() {
           </button>
         </div>
       </form>
+      {/* WorkReviews */}
+      <WorkReviews />
     </div>
   );
 }

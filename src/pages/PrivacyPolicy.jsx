@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import WorkReviews from "../components/WorkReviews";
 
 export default function PrivacyPolicy() {
   return (
@@ -93,6 +94,8 @@ export default function PrivacyPolicy() {
             </section>
           </div>
         </div>
+        {/* WorkReviews */}
+      <WorkReviews />
       </div>
     </motion.div>
   );
