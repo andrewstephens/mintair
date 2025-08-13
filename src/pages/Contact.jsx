@@ -72,7 +72,11 @@ export default function Contact() {
             Message sent successfully!
           </div>
         )}
+        <p className="mt-2 text-lg leading-8 text-gray-600">
+          You can contact us via email at <a href="mailto:info@mintair.com">info@mintair.com</a> or call us at <a href="tel:+18776468658">(877) 646-8658</a>.
+        </p>
       </div>
+      {/*
       <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
@@ -171,8 +175,9 @@ export default function Contact() {
             </div>
           </div>
         </div>
+        */}
         {/* Consent Checkbox */}
-        <div className="mt-4 flex items-start space-x-2">
+        {/*<div className="mt-4 flex items-start space-x-2">
           <input
             type="checkbox"
             id="consent"
@@ -191,9 +196,9 @@ export default function Contact() {
             and . Text "HELP" for help or contact us at info@voltaicnow.com.
             Text "STOP" to cancel.
           </label>
-        </div>
+        </div>*/}
         {/* Submit Button - Disabled until checkbox is checked */}
-        <div className="mt-10">
+        {/*<div className="mt-10">
           <button
             type="submit"
             disabled={!consentChecked}
@@ -207,7 +212,7 @@ export default function Contact() {
             Get a free consultation
           </button>
         </div>
-      </form>
+      </form>*/}
       {/* WorkReviews */}
       <WorkReviews />
     </div>
