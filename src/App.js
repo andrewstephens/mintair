@@ -18,13 +18,6 @@ const hotjarVersion = 6;
 
 function App() {
   const location = useLocation();
-  const [key, setKey] = useState(Date.now());
-
-  useEffect(() => {
-    if (location.pathname === '/recent-projects') {
-      setKey(Date.now()); // Force new key every time we visit this route
-    }
-  }, [location.pathname]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -36,18 +29,18 @@ function App() {
     <div>
       <Header />
       <div className="relative">
-        <AnimatePresence mode="wait" initial={false}>
-          <Routes>
+        {/* <AnimatePresence mode="wait" initial={false}> */}
+          <Routes location={location} key={location.key}>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/blog" element={<Blog />} />
             <Route exact path="/contact" element={<Contact />} />
-            <Route exact path="/recent-projects" element={<RecentProjects key={key}/>} />
+            <Route exact path="/recent-projects" element={<RecentProjects />} />
             <Route exact path="/services" element={<Services />} />
             <Route exact path="/services/:id" element={<ServiceDetail />} />
             <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
-        </AnimatePresence>
+        {/* </AnimatePresence> */}
       </div>
       <Footer />
     </div>
