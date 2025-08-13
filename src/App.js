@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Hotjar from "@hotjar/browser";
 import { AnimatePresence } from "framer-motion";
@@ -18,6 +18,13 @@ const hotjarVersion = 6;
 
 function App() {
   const location = useLocation();
+  const [key, setKey] = useState(Date.now());
+
+  useEffect(() => {
+    if (location.pathname === '/recent-projects') {
+      setKey(Date.now()); // Force new key every time we visit this route
+    }
+  }, [location.pathname]);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -35,7 +42,7 @@ function App() {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/blog" element={<Blog />} />
             <Route exact path="/contact" element={<Contact />} />
-            <Route exact path="/recent-projects" element={<RecentProjects />} />
+            <Route exact path="/recent-projects" element={<RecentProjects key={key}/>} />
             <Route exact path="/services" element={<Services />} />
             <Route exact path="/services/:id" element={<ServiceDetail />} />
             <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
