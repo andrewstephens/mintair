@@ -24,6 +24,7 @@ export default function Header() {
   const navLinks = [
     ["Home", "/"],
     ["About", "/about"],
+    ["Recent Projects", "/recent-projects"],
     ["Privacy Policy", "/privacy-policy"],
   ];
 

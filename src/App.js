@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
+import RecentProjects from "./pages/RecentProjects";
 import ServiceDetail from "./pages/services/[serviceId]";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 
@@ -34,6 +35,7 @@ function App() {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/blog" element={<Blog />} />
             <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/recent-projects" element={<RecentProjects />} />
             <Route exact path="/services" element={<Services />} />
             <Route exact path="/services/:id" element={<ServiceDetail />} />
             <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />

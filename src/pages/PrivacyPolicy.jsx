@@ -94,8 +94,6 @@ export default function PrivacyPolicy() {
             </section>
           </div>
         </div>
-        {/* WorkReviews */}
-      <WorkReviews />
       </div>
     </motion.div>
   );

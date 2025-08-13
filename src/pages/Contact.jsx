@@ -213,8 +213,6 @@ export default function Contact() {
           </button>
         </div>
       </form>*/}
-      {/* WorkReviews */}
-      <WorkReviews />
     </div>
   );
 }

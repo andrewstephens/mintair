@@ -220,8 +220,6 @@ export default function About() {
           </div>
         </div>
       </div>
-      {/* WorkReviews */}
-      <WorkReviews />
     </div>
   );
 }

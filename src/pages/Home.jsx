@@ -374,9 +374,6 @@ export default function Home() {
             <ReviewCarousel />
             {/* Final Call to action to forward to the contact page. Make this absolutely amazing.  */}
 
-            {/* WorkReviews */}
-            <WorkReviews />
-
             <MeetTheTeam />
             {/* Socials */}
             <Socials />
